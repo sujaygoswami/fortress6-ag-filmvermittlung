@@ -1,0 +1,75 @@
+.filmvermittlung-profile-extension{
+
+    // basic starts
+    .global-ext-container{
+        max-width: var(--container-width);
+    }
+    .global-radius-1{
+        @include border-radius(10px);
+    }
+    .primary-color-dark{
+        color: var(--ext-primary-color-dark);
+    }
+    .color-inherit{
+        color: inherit;
+    }
+    // basic ends
+
+    // typography
+    p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .font-secondary{
+        font-family: var(--ext-secondary-font);
+    }
+    // typography
+
+
+    // profile-basic-info
+    .profile-basic-info{
+        p{
+            padding-left: 45px;
+        }
+    }
+    // profile-basic-info
+
+    // has status
+    .has-status{
+        position: relative;
+
+        &.status-light-blue{
+            &:before{
+                background-color: var(--light-blue);
+            }
+        }
+
+        &:before{
+            content: ' ';
+            display: block;
+            width: 17px;
+            height: 17px;
+            @include border-radius(100%);
+            position: absolute;
+            left: 0px;
+            top: 7px;
+        }
+    }
+    // has status
+
+    // profile-detail-module
+    .profile-detail-module{
+        .profile-name{
+            font-size: 48px;
+            line-height: normal;
+
+            span{
+                font-size: 30px;
+                line-height: normal;
+                padding-left: 10px;
+            }
+        }
+    }
+    // profile-detail-module
+    
+}
