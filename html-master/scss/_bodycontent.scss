@@ -1,50 +1,72 @@
-.filmvermittlung-profile-extension{
+.filmvermittlung-profile-extension {
 
     // basic starts
-    .global-ext-container{
+    .default-row{
+        row-gap: $grid-gutter-width;
+
+        &.sm-row{
+            row-gap: 20px;
+        }
+    }
+    .global-ext-container {
         max-width: var(--container-width);
     }
-    .global-radius-1{
+
+    .global-radius-1 {
         @include border-radius(10px);
     }
-    .primary-color-dark{
+
+    .primary-color-dark {
         color: var(--ext-primary-color-dark);
     }
-    .color-inherit{
+
+    .color-inherit {
         color: inherit;
     }
+
+    .mb-4-plus{
+        margin-bottom: 1.9rem;
+    }
+
+    .mb-5-plus{
+        margin-bottom: 5.2rem;
+    }
+
     // basic ends
 
     // typography
-    p{
+    p {
         font-size: 24px;
         line-height: 30px;
     }
-    .font-secondary{
+
+    .font-secondary {
         font-family: var(--ext-secondary-font);
     }
+
     // typography
 
 
     // profile-basic-info
-    .profile-basic-info{
-        p{
+    .profile-basic-info {
+        p {
             padding-left: 45px;
         }
     }
+
     // profile-basic-info
 
     // has status
-    .has-status{
+    .has-status {
         position: relative;
 
-        &.status-light-blue{
-            &:before{
+        &.status-light-blue {
+            &:before {
                 background-color: var(--light-blue);
             }
         }
 
-        &:before{
+        &:before {
             content: ' ';
             display: block;
             width: 17px;
@@ -55,21 +77,85 @@
             top: 7px;
         }
     }
+
     // has status
 
     // profile-detail-module
-    .profile-detail-module{
-        .profile-name{
+    .profile-detail-module {
+        .profile-name {
             font-size: 48px;
             line-height: normal;
 
-            span{
+            span {
                 font-size: 30px;
                 line-height: normal;
                 padding-left: 10px;
             }
         }
     }
+
     // profile-detail-module
-    
+
+    // ext-tags
+    .ext-tags{
+        & > .main-wrap{
+            display: flex;
+            column-gap: 5px;
+            row-gap: 5px;
+            flex-wrap: wrap;
+
+            & > div{
+                padding: 8px 15px;
+                background-color: var(--ext-primary-color);
+                color: white;
+                font-family: var(--ext-secondary-font);
+                font-size: 24px;
+                line-height: normal;
+            }
+        }
+    }
+    // ext-tags
+
+    // iconic-label
+    .iconic-label{
+        & > .main-wrap{
+            display: flex;
+            column-gap: 70px;
+            row-gap: 70px;
+
+
+            & > div{
+                display: flex;
+                column-gap: 25px;
+                row-gap: 25px;
+                font-family: var(--ext-third-font);
+                font-size: 16px;
+                line-height: normal;
+                align-items: center;
+            }
+
+            img{
+                width: 45px;
+                height: auto;
+            }
+        }
+    }
+    // iconic-label
+
+    // logo-module
+    .logo-module{
+        .logo-holder{
+            justify-content: center;
+            display: grid;
+            align-items: center;
+            border: 1px solid var(--ext-primary-color);
+
+            img{
+                max-height: 150px;
+                max-width: 100%;
+            }
+        }
+    }
+    // logo-module
+
 }

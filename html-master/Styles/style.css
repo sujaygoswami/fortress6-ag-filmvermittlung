@@ -9278,7 +9278,8 @@ textarea.form-control-lg {
 
 .filmvermittlung-profile-extension {
   --ext-primary-font: 'Sathu';
-  --ext-secondary-font: 'a Atomic Md'; }
+  --ext-secondary-font: 'a Atomic Md';
+  --ext-third-font: 'Arial'; }
 
 .filmvermittlung-profile-extension {
   --ext-primary-color: #682511;
@@ -9399,6 +9400,11 @@ html, body {
       text-decoration: none !important;
       margin-top: 5px; }
 
+.filmvermittlung-profile-extension .default-row {
+  row-gap: 60px; }
+  .filmvermittlung-profile-extension .default-row.sm-row {
+    row-gap: 20px; }
+
 .filmvermittlung-profile-extension .global-ext-container {
   max-width: var(--container-width); }
 
@@ -9413,6 +9419,12 @@ html, body {
 
 .filmvermittlung-profile-extension .color-inherit {
   color: inherit; }
+
+.filmvermittlung-profile-extension .mb-4-plus {
+  margin-bottom: 1.9rem; }
+
+.filmvermittlung-profile-extension .mb-5-plus {
+  margin-bottom: 5.2rem; }
 
 .filmvermittlung-profile-extension p {
   font-size: 24px;
@@ -9448,6 +9460,44 @@ html, body {
     font-size: 30px;
     line-height: normal;
     padding-left: 10px; }
+
+.filmvermittlung-profile-extension .ext-tags > .main-wrap {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  flex-wrap: wrap; }
+  .filmvermittlung-profile-extension .ext-tags > .main-wrap > div {
+    padding: 8px 15px;
+    background-color: var(--ext-primary-color);
+    color: white;
+    font-family: var(--ext-secondary-font);
+    font-size: 24px;
+    line-height: normal; }
+
+.filmvermittlung-profile-extension .iconic-label > .main-wrap {
+  display: flex;
+  column-gap: 70px;
+  row-gap: 70px; }
+  .filmvermittlung-profile-extension .iconic-label > .main-wrap > div {
+    display: flex;
+    column-gap: 25px;
+    row-gap: 25px;
+    font-family: var(--ext-third-font);
+    font-size: 16px;
+    line-height: normal;
+    align-items: center; }
+  .filmvermittlung-profile-extension .iconic-label > .main-wrap img {
+    width: 45px;
+    height: auto; }
+
+.filmvermittlung-profile-extension .logo-module .logo-holder {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  border: 1px solid var(--ext-primary-color); }
+  .filmvermittlung-profile-extension .logo-module .logo-holder img {
+    max-height: 150px;
+    max-width: 100%; }
 
 /*! Vendor */
 /*!
